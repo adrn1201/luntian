@@ -20,12 +20,12 @@ loginForm.addEventListener("submit", (e) => {
         username.value === userCredentials.employee.username &&
         password.value === userCredentials.employee.password
     ) {
-        console.log("logged in as employee!");
+        window.location.href = "index.html";
     } else if (
         username.value === userCredentials.student.username &&
         password.value === userCredentials.student.password
     ) {
-        console.log("logged in as student");
+        window.location.href = "index.html";
     } else {
         alert("user doesn't exist");
     }
