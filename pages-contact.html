@@ -506,24 +506,106 @@
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
-    <p class="text-center p-5">
-      This page is only available in the pro version! <a href="https://bootstrapmade.com/demo/templates/NiceAdmin/pages-contact.html" target="_blank">Preview the page online</a> | <a href="https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/#download" target="_blank">Buy the pro version</a>
-    </p>
+
+    <div class="row">
+      <div class="col-lg-6">
+    
+        <div class="pagetitle">
+          <h1>Transactions History</h1>
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active">Transaction History</li>
+            </ol>
+          </nav>
+        </div><!-- End Page Title -->
+    
+      </div>
+
+      
+    </div>
+    
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home" type="button" role="tab" 
+            aria-controls="home" aria-selected="true" >Personal Transactions</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" 
+            aria-controls="profile" aria-selected="false" tabindex="-1">School Transactions</button>
+          </li>
+          
+        </ul>
+
+        <div class="tab-content pt-2" id="borderedTabContent">
+          <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+            <table class="table">
+              <thead class="table table-secondary">
+                <tr>
+                  <th>Time</th>
+                  <th>Name</th>
+                  <th>Amount</th>
+                  <th>Transaction Desc</th>
+                  <th>Transaction ID</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              
+              
+            </table>
+            <div class="card-body">
+             
+
+              <div class="d-flex align-items-center">
+                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="ri ri-feedback-line"></i>
+                </div>
+                <div class="ps-3">
+                  <h5>No Records Found</h5>
+                  
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+            <table class="table">
+              <thead class="table table-secondary">
+                <tr>
+                  <th scope="col">Time</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Transaction Type</th>
+                  <th scope="col">Transaction ID</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <td>2:51pm</td>
+                <td>Ed Chaz</td>
+                <td>1000ltc</td>
+                <td>Thesis Defense Fee</td>
+                <td>12341241</td>
+                <td>Paid</td>
+              </tbody>
+              
+              
+            </table>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div>
-  </footer><!-- End Footer -->
+  
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

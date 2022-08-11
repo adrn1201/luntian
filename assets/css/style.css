@@ -348,6 +348,7 @@ h6 {
 /* Bordered Tabs */
 .nav-tabs-bordered {
   border-bottom: 2px solid #ebeef4;
+  padding: 10px;
 }
 
 .nav-tabs-bordered .nav-link {
@@ -358,13 +359,14 @@ h6 {
 
 .nav-tabs-bordered .nav-link:hover,
 .nav-tabs-bordered .nav-link:focus {
-  color: #4154f1;
+  color: #D3D3D3;
+  
 }
 
 .nav-tabs-bordered .nav-link.active {
-  background-color: #fff;
-  color: #4154f1;
-  border-bottom: 2px solid #4154f1;
+  background-color: #D3D3D3;
+  color: #000000;
+  
 }
 
 /*--------------------------------------------------------------
@@ -817,10 +819,11 @@ h6 {
 /* Info Cards */
 .dashboard .info-card {
   padding-bottom: 10px;
+  padding-top:10px;
 }
 
-.dashboard .info-card h6 {
-  font-size: 28px;
+.dashboard .info-card h5 {
+  font-size:18px;
   color: #012970;
   font-weight: 700;
   margin: 0;
@@ -850,7 +853,13 @@ h6 {
   color: #ff771d;
   background: #ffecdf;
 }
-
+/*Buttons*/
+.paybuttons{
+  padding-bottom: 10px;
+}
+.paybuttons .btn{
+  padding: 10px;
+}
 /* Activity */
 .dashboard .activity {
   font-size: 14px;
