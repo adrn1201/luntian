@@ -369,7 +369,10 @@ h6 {
 /* Bordered Tabs */
 
 .nav-tabs-bordered {
-    border-bottom: 2px solid #ebeef4;
+    <<<<<<< HEAD border-bottom: 2px solid #ebeef4;
+    =======border-bottom: 2px solid #ebeef4;
+    padding: 10px;
+    >>>>>>>71da6a1e280fccbf253c935ff29f7e6b932cac97
 }
 
 .nav-tabs-bordered .nav-link {
@@ -380,13 +383,20 @@ h6 {
 
 .nav-tabs-bordered .nav-link:hover,
 .nav-tabs-bordered .nav-link:focus {
-    color: #4154f1;
+    <<<<<<< HEAD color: #4154f1;
 }
 
 .nav-tabs-bordered .nav-link.active {
     background-color: #fff;
     color: #4154f1;
     border-bottom: 2px solid #4154f1;
+    =======color: #D3D3D3;
+}
+
+.nav-tabs-bordered .nav-link.active {
+    background-color: #D3D3D3;
+    color: #000000;
+    >>>>>>>71da6a1e280fccbf253c935ff29f7e6b932cac97
 }
 
 
@@ -848,7 +858,7 @@ h6 {
 /* Info Cards */
 
 .dashboard .info-card {
-    padding-bottom: 10px;
+    <<<<<<< HEAD padding-bottom: 10px;
 }
 
 .dashboard .info-card h6 {
@@ -857,6 +867,17 @@ h6 {
     font-weight: 700;
     margin: 0;
     padding: 0;
+    =======padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.dashboard .info-card h5 {
+    font-size: 18px;
+    color: #012970;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    >>>>>>>71da6a1e280fccbf253c935ff29f7e6b932cac97
 }
 
 .dashboard .card-icon {
@@ -882,6 +903,20 @@ h6 {
     color: #ff771d;
     background: #ffecdf;
 }
+
+<<<<<<< HEAD=======
+/*Buttons*/
+
+.paybuttons {
+    padding-bottom: 10px;
+}
+
+.paybuttons .btn {
+    padding: 10px;
+}
+
+
+/* >>>>>>> 71da6a1e280fccbf253c935ff29f7e6b932cac97 */
 
 
 /* Activity */
