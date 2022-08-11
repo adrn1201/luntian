@@ -587,32 +587,61 @@
             <div class="col-xxl-5 col-md-12">
               <div class="card info-card sales-card">
 
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
+               
 
                 <div class="card-body">
                   <h5 class="card-title">Pending <span>| Today</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-cash-coin"></i>
+                      <a type="button" data-bs-toggle="modal" data-bs-target="#basicModal">
+                       <i class="ri ri-alert-line"></i>
+                      </a>
+                      
                     </div>
                     <div class="ps-3">
-                      <h5>145</h5>
-                      <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                      <h5>1 pending fee</h5>
+                      <span class="text-success small pt-1 fw-bold">Please</span> <span class="text-muted small pt-2 ps-1">pay! </span>
 
                     </div>
                   </div>
+                  <div class="modal fade" id="basicModal" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Pending Fee</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table">
+                            <thead class="table table-secondary">
+                              <tr>
+                                <th scope="col">Time</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Transaction Type</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <td>1:41pm</td>
+                              <td>Ed Chaz</td>
+                              <td>1000ltc</td>
+                              <td>Tuition Balance</td>
+                            </tbody>
+                            
+                            
+                          </table>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                 
+
                 </div>
 
               </div>
@@ -671,7 +700,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Luntian Coin<span>/Today</span></h5>
+                  <h5 class="card-title">Luntian Subscribers<span></span></h5>
 
                   <!-- Line Chart -->
                   <div id="reportsChart"></div>
@@ -680,14 +709,14 @@
                     document.addEventListener("DOMContentLoaded", () => {
                       new ApexCharts(document.querySelector("#reportsChart"), {
                         series: [{
-                          name: 'Sales',
-                          data: [31, 40, 28, 51, 42, 82, 56],
+                          name: '1HR',
+                          data: [15, 11, 32, 18, 9, 24, 11],
                         }, {
-                          name: 'Revenue',
+                          name: '1DAY',
                           data: [11, 32, 45, 32, 34, 52, 41]
                         }, {
-                          name: 'Customers',
-                          data: [15, 11, 32, 18, 9, 24, 11]
+                          name: '1WEEK',
+                          data: [31, 40, 28, 51, 42, 82, 56]
                         }],
                         chart: {
                           height: 350,
@@ -789,7 +818,7 @@
                 </div><!-- End activity item-->
 
                 <div class="activity-item d-flex">
-                  <div class="activite-label">1 day</div>
+                  <div class="activite-label">5 hrs</div>
                   <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
                   <div class="activity-content">
                     Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a> tempore
@@ -797,7 +826,7 @@
                 </div><!-- End activity item-->
 
                 <div class="activity-item d-flex">
-                  <div class="activite-label">2 days</div>
+                  <div class="activite-label">18 hrs</div>
                   <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
                   <div class="activity-content">
                     Est sit eum reiciendis exercitationem
@@ -805,7 +834,7 @@
                 </div><!-- End activity item-->
 
                 <div class="activity-item d-flex">
-                  <div class="activite-label">4 weeks</div>
+                  <div class="activite-label">1 day</div>
                   <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
                   <div class="activity-content">
                     Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
